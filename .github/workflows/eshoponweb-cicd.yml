@@ -38,14 +38,14 @@ jobs:
 
       # Upload build artifact
       - name: Upload artifact for deployment
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: react-app
           path: app.zip
 
       # Upload Bicep template
       - name: Upload Bicep Template
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: bicep-template
           path: ${{ env.TEMPLATE-FILE }}
